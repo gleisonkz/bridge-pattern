@@ -5,9 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { PlusComponent } from './components/plus/plus.component';
+import { ScreenComponent } from './components/screen/screen.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PlusComponent, ScreenComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
