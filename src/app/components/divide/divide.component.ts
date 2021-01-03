@@ -3,12 +3,12 @@ import { MATH } from 'src/app/math.token';
 import { MathCount } from '../../math.interface';
 
 @Component({
-  selector: 'app-minus',
-  templateUrl: './minus.component.html',
-  styleUrls: ['./minus.component.scss'],
-  providers: [{ provide: MATH, useExisting: MinusComponent }],
+  selector: 'app-divide',
+  templateUrl: './divide.component.html',
+  styleUrls: ['./divide.component.scss'],
+  providers: [{ provide: MATH, useExisting: DivideComponent }],
 })
-export class MinusComponent implements OnInit, MathCount {
+export class DivideComponent implements OnInit, MathCount {
   result: number;
   isLoading = false;
 
@@ -17,12 +17,12 @@ export class MinusComponent implements OnInit, MathCount {
   ngOnInit(): void {}
 
   load(): void {
-    this.result = 200;
+    this.result = 800;
   }
 
   refresh(): void {
     this.isLoading = true;
-    this.result = this.result - 50;
+    this.result = this.result / 2;
     setTimeout(() => {
       this.isLoading = false;
     }, 1000);

@@ -1,5 +1,6 @@
 <div>
   <h2>Math Plus</h2>
   <img src="https://img.icons8.com/officel/100/000000/plus-2-math.png" />
-  <span>{{ result }}</span>
+  <span *ngIf="!isLoading">{{ result }}</span>
+  <mat-spinner *ngIf="isLoading" [mode]="'indeterminate'"> </mat-spinner>
 </div>
