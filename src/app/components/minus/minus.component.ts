@@ -5,7 +5,6 @@ import { MathCount } from '../../math.interface';
 @Component({
   selector: 'app-minus',
   templateUrl: './minus.component.html',
-  styleUrls: ['./minus.component.scss'],
   providers: [{ provide: MATH, useExisting: MinusComponent }],
 })
 export class MinusComponent implements OnInit, MathCount {

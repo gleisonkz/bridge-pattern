@@ -1,9 +1,12 @@
-<div>
-  <h2>Math Divide</h2>
-  <img src="https://img.icons8.com/officel/100/000000/divide-2.png" />
-  <span *ngIf="!isLoading">{{ result }}</span>
+<div class="math">
+  <h2 class="math__title">Math Divide</h2>
+  <img
+    class="math__image"
+    src="https://img.icons8.com/officel/100/000000/divide-2.png"
+  />
+  <span class="math__value" *ngIf="!isLoading">{{ result }}</span>
   <mat-progress-bar
-    class="loader"
+    class="math__loader"
     mode="buffer"
     *ngIf="isLoading"
   ></mat-progress-bar>

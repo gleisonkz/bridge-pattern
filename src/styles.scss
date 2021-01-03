@@ -11,3 +11,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.math {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__loader {
+    margin-top: 116px;
+  }
+
+  &__value {
+    margin-top: 100px;
+    font-size: 60px;
+  }
+
+  mat-spinner {
+    margin-top: 20px;
+  }
+}

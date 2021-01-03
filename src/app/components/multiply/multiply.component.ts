@@ -5,7 +5,6 @@ import { MathCount } from '../../math.interface';
 @Component({
   selector: 'app-multiply',
   templateUrl: './multiply.component.html',
-  styleUrls: ['./multiply.component.scss'],
   providers: [{ provide: MATH, useExisting: MultiplyComponent }],
 })
 export class MultiplyComponent implements OnInit, MathCount {

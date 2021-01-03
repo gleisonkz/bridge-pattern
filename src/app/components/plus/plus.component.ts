@@ -5,7 +5,6 @@ import { MATH } from './../../math.token';
 @Component({
   selector: 'app-plus',
   templateUrl: './plus.component.html',
-  styleUrls: ['./plus.component.scss'],
   providers: [{ provide: MATH, useExisting: PlusComponent }],
 })
 export class PlusComponent implements OnInit, MathCount {

@@ -5,7 +5,6 @@ import { MathCount } from '../../math.interface';
 @Component({
   selector: 'app-divide',
   templateUrl: './divide.component.html',
-  styleUrls: ['./divide.component.scss'],
   providers: [{ provide: MATH, useExisting: DivideComponent }],
 })
 export class DivideComponent implements OnInit, MathCount {
